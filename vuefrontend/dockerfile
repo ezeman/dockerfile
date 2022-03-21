@@ -1,0 +1,11 @@
+FROM node:lts-alpine
+
+RUN npm install -g serve
+
+WORKDIR /app
+
+COPY dist/  /app/dist
+
+EXPOSE 82
+
+CMD ["serve", "-s", "dist","-l","82"]

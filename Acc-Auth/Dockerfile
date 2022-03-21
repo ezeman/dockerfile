@@ -3,4 +3,4 @@ FROM mcr.microsoft.com/dotnet/core/sdk:3.1
 WORKDIR '/AccAPI'
 ENV ASPNETCORE_URLS="http://*:83"
 EXPOSE 83/tcp
-ENTRYPOINT ["dotnet", "AccountAccess.dll"]
+ENTRYPOINT ["dotnet", ".DLL startup file"]
